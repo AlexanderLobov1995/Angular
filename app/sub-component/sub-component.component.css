@@ -1,0 +1,17 @@
+sub-component{
+    display: block;
+    text-align: center;
+}
+.poher{
+    display: inline-block;
+    size: 500px;
+}
+
+sub-component h1{
+    font-size: 50px;
+}
+
+sub-component img{
+    height: 200px;
+    transfrom: rotate 50 deg;
+}
