@@ -3,3 +3,6 @@
 
 # folder node_moduls
 node_modules/
+
+#folder dist
+dist/
