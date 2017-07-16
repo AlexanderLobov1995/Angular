@@ -7,5 +7,5 @@ import { OtherComponent } from './other-component.component';
     ]
   }
 )
-export class OtherComponentModule {
+export class OtherModule {
 }
