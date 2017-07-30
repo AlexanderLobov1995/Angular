@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { OtherComponentService } from './other-component.service';
+import { Observable } from 'rxjs/Observable';
+import { Human } from '../interfaces';
 
 @Component({
   selector: 'app-other-component',
@@ -6,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./other-component.component.css']
 
 })
-export class OtherComponent {
+export class OtherComponent implements OnInit {
+  people: Observable<Human>;
+
+  constructor(public otherComponentService: OtherComponentService) {
+  }
+
+  ngOnInit() {
+    this.people = this.otherComponentService.getPeople();
+  }
 }
